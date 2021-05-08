@@ -6,7 +6,7 @@ Technology Used :
   
   Front-End : HTML/CSS/Bootstrap
   
-  Back-End : PHP/JavaScript
+  Back-End : JavaScript
   
   Editor : Sublime Text 3
 
