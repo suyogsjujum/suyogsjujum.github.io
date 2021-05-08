@@ -3,7 +3,7 @@ I am excited to share my successfully completed #Task3 given by The Sparks Found
 
 The task was to create a Payment Gateway Integration
 Technology Used :
-  Front-End : HTML/CSS?Bootstrap
+  Front-End : HTML/CSS/Bootstrap
   Back-End : PHP/JavaScript
 
 Github Repository :
