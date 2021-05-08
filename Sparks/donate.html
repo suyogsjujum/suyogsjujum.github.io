@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Donation Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <style>
+      html, body {
+      min-height: 100%;
+      }
+      body, div, form, input, select, textarea, p { 
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: Arial;
+      font-size: 20px;
+      color: #030304 ;
+      line-height: 40px;
+      }
+      body{
+        background-color: #abddfc 
+      }
+      h1 {
+      position: absolute;
+      margin: 0;
+      line-height: 42px;
+      font-size: 40px;
+      color: #fff;
+      z-index: 2;
+      margin-bottom: 10px;
+      }
+      .testbox {
+       width: 80%;
+    height: 600px;
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 10px;
+    background: #fff00000;
+      }
+      form {
+      width: 100%;
+    height: 100%;
+    flex: 50%;
+    padding: 30px;
+    text-align: left; 
+      }
+      .banner {
+      position: relative;
+      height: 500px;
+      background-image: url("images/img3.jpg"); 
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      }
+      .banner::after {
+      content: "";
+      background-color: rgba(0, 0, 0, 0.3); 
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      }
+      input, select, textarea {
+      margin-bottom: 10px;
+      border: 1px solid #030304;
+      border-radius: 30px;
+      background-color:transparent;
+      }
+      input {
+      width: calc(100% - 10px);
+      padding: 5px;
+      }
+      input::placeholder{
+        color: #030304;
+      }
+      select {
+      width: 100%;
+      padding: 6.5px 0;
+      background: transparent;
+      color: #030304;
+      }
+      option{
+      width: 100%;
+      padding: 6.5px 0;
+      background: transparent;
+      color: #030304;
+      }
+      textarea {
+      width: calc(100% - 12px);
+      padding: 5px;
+      }
+      @media (max-width:768px ) and (min-width: 320px) {
+      .name-item, .city-item {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+          }
+    </style>
+  </head>
+  <body>
+    <div class="testbox">
+      <form>
+        <div class="banner">
+        
+        </div>
+        <div class="item">
+          <p><strong>Name</strong></p>
+          <div class="name-item">
+
+          <select>
+            <option value="title" selected>Title</option>
+            <option value="ms">Ms</option>
+            <option value="mrs">Mrs</option>
+            <option value="mr">Mr</option>
+            <option value="dr">Dr</option>
+          </select>
+          <input class="name" type="text" name="name" placeholder="First" required>
+          <input class="name" type="text" name="name" placeholder="Last" required>
+        </div>
+            
+        </div>
+        <div class="item">
+          <p><strong>Phone</strong></p>
+          <input type="text" name="phone" placeholder="123-456-7890"required>
+        </div>
+        <div class="item">
+          <p><strong>Email</strong></p>
+          <input type="email" name="email" placeholder="Enter Your Email" required>
+        </div>
+        <div class="item">
+          <p><strong>Confirm Email</strong></p>
+          <input type="email" name="email" placeholder=" Confirm your email" required>
+        </div>
+        <hr>
+        <div class="item">
+          <p><strong>Contact Address</strong></p>
+          <input type="text" name="name" placeholder="Street address" />
+          <input type="text" name="name" placeholder="Street address line 2" />
+          <div class="city-item">
+            <input type="text" name="name" placeholder="City" />
+            <input type="text" name="name" placeholder="Region" />
+            <input type="text" name="name" placeholder="Zip code" />
+            <select>
+              <option value="">Country</option>
+              <option value="1">India</option>
+              <option value="2">Germany</option>
+              <option value="3">France</option>
+              <option value="4">Australia</option>
+              <option value="5">USA</option>
+            </select>
+          </div>
+        </div>
+        <select>
+              <option value="">Want to keep it anonymous?</option>
+              <option value="1">Yes</option>
+              <option value="2">No</option>
+            </select>
+<hr>
+    <input type="text" name="amt" placeholder="Donation Amount" required>
+<form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_H5TLRsxujWCunH" async> </script></form>
+</script> 
+</form>
+</div>
+      </form>
+    </div>
+  </body>
+</html>
